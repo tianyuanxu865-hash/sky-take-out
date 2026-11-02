@@ -85,4 +85,19 @@ public interface OrderService {
      * @param id
      */
     void complete(Long id);
+
+
+
+
+    /**
+     * 支付成功，修改订单状态
+     * @param outTradeNo
+     */
+    void paySuccess(String outTradeNo);
+    /**
+     * 客户催单
+     * @param id
+     * @return
+     */
+    void reminder(Long id);
 }
